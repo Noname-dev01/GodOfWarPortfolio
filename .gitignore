@@ -35,3 +35,18 @@ out/
 
 ### VS Code ###
 .vscode/
+
+###fullpage.js-master###
+.DS_Store
+.idea
+.ignore/
+.vscode/*
+bower_components/
+node_modules/
+**/node_modules/
+package-lock.json
+src/fullpage.extensions.js
+examples/bug**
+
+### oauth2 ###
+application-oauth.properties
