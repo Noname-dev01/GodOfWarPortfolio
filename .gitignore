@@ -38,7 +38,6 @@ out/
 
 ###fullpage.js-master###
 .DS_Store
-.idea
 .ignore/
 .vscode/*
 bower_components/
@@ -47,6 +46,9 @@ node_modules/
 package-lock.json
 src/fullpage.extensions.js
 examples/bug**
+fullPage.js-master/examples
+fullPage.js-master/tests
+fullPage.js-master/vendors
 
 ### oauth2 ###
 application-oauth.properties
