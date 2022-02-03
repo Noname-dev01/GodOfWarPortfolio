@@ -1,110 +1,396 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Heung-portfolio">
     <title>God of War</title>
-    <link rel="shortcut icon" type="text/css" href="/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="text/css" href="./img/favicon.ico">
 
+    <!-- font -Rye- -->
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <link  rel="stylesheet" type="text/css" href="/js/Simple-Falling-Snow-Effect-with-jQuery-CSS3-let-it-snow/Simple-Falling-Snow-Effect-with-jQuery-CSS3-let-it-snow/let-it-snow.css">
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- snow effect -->
+    <link  rel="stylesheet" type="text/css" href="./js/plugin/plugin_js/let-it-snow.css">
+    <!-- swiper cdn -->
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- js -->
+    <script src="./godjs/index.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <!-- scroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
 </head>
 
 <body>
-    
-    <div id="fullpage">
-        <div class="section " id="section0">
-            <img src="/img/main.jpg" alt="">
-            <div class="logo">
-                <img src="/img/LOGO.png" alt="">
-            </div>
-           
+<section id="intro">
+    <article class="box">
+        <video width="1376" height="861" autoplay="" muted="">
+            <source src="./video/video_intro.mp4" type="video/mp4">
+        </video>
+    </article>
+</section>
+<!-- sound -->
+<audio id="sound" src="./bgm/bgmsound.m4a" loop></audio>
+<div id="fullpage">
+    <div class="section" id="section0">
+        <img src="./img/main.jpg" alt="메인 이미지">
+        <div class="logo">
+            <img src="./img/LOGO.png" alt="로고">
         </div>
-        <div class="section" id="section1">
-            <!-- snow effect -->
-            <div class="let-it-snow"></div>
-
-            <video class="bg_trailer" id="myVideo" loop muted data-autoplay>
-                <source src="/video/God of War – Father and Son Trailer_1.mp4" type="video/mp4">
-                <source  src="/video/God of War – Father and Son Trailer_1.webm" type="video/webm">
-                
-            </video>
-            <div class="trailer">
-                <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/EE-4GvjKcfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="gient">
-                <img src="/img/iceGient.png" alt="">
-            </div>
-            <nav>
-                <ul class="login_box">
-                    <li><a href="/login">로그인</a></li>
-                    <li><a href="">회원가입</a></li>
-                </ul>
-
-                <div class="menu_box">
-                    <h1><img src="/img/LOGO.png" alt=""></h1>
-                    <ul>
-                        <li><a href="#">게임소개</a></li>
-                        <li><a href="#">캐릭터</a></li>
-                        <li><a href="#">스킬 소개</a></li>
-                        <li><a href="#">공략 게시판</a></li>
-                        <li><a href="#">게임 구매</a></li>
-                        <li><a href="#">고객 지원</a></li>
-                    </ul>
-                </div>
-            </nav>
-            
+        <div class="scroll_banner">
+            <div class="text"><img src="img/text_scroll.png" alt="스크롤"></div>
+            <div class="arrow"><img src="img/scroll_icon.png" alt="스크롤 아이콘"></div>
         </div>
-        <div class="section" id="section2">
-            
-                
-        </div>
-            
-        </div>
-        
-        <div class="section" id="section3">
-            
-        </div>
-        
     </div>
+
+    <div class="section" id="section1" >
+        <!-- snow effect -->
+        <div class="let-it-snow"></div>
+
+        <video class="bg_trailer" id="myVideo" loop muted data-autoplay>
+            <source src="./video/God of War – Father and Son Trailer_01.mp4" type="video/mp4">
+            <source  src="./video/God of War – Father and Son Trailer_01.webm" type="video/webm">
+
+        </video>
+        <div class="trailer">
+            <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/EE-4GvjKcfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="gient">
+            <img src="./img/iceGient.png" alt="아이스자이언트">
+        </div>
+        <nav>
+            <ul class="login_box">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+            </ul>
+
+            <div class="menu_box">
+                <h1><img src="./img/LOGO.png" alt="로고"></h1>
+                <ul>
+                    <li><a >게임소개</a></li>
+                    <li><a href="./character.html">캐릭터</a></li>
+                    <li><a >스킬 소개</a></li>
+                    <li><a href="./notice_board.html" >공략 게시판</a></li>
+                    <li><a >게임 구매</a></li>
+                    <li><a >고객 지원</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="scroll_banner2">
+            <div class="text"><img src="img/text_scroll.png" alt="스크롤"></div>
+            <div class="arrow"><img src="img/scroll_icon.png" alt="스크롤 아이콘"></div>
+        </div>
+    </div>
+
+    <div class="section" id="section2">
+        <div class="black_bg">
+            <div class="close"><a onclick=offClick() href="#">&times;</a></div>
+            <div class="sc01_pop_contents">
+                <video width="100%" height="100%" loop="" id="pop1_video" controls>
+                    <source src="./video/God of War – Father and Son Trailer_01.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <h1>Trailer/Image</h1>
+        <div class="tab_menu">
+            <ul class="list">
+                <li class="is_on">
+                    <a href="#tab1" class="btn">Trailer</a>
+                    <div id="tab1" class="cont" >
+
+                        <div class="part1" >
+                            <div class="pop">
+                                <img class="contents_img" src="./img/tr1.png" alt="동영상 이미지">
+                                <p>Arrow-GOD OF WAR TV Commercial</p>
+                                <div class="play_btn">
+                                    <img src="./img/play.png" alt="플레이버튼">
+                                </div>
+                            </div>
+
+                            <div class="pop">
+                                <img src="./img/tr2.png" alt="동영상 이미지">
+                                <p>Advanced combat strategies</p>
+                                <div class="play_btn">
+                                    <img src="./img/play.png" alt="플레이버튼">
+                                </div>
+                            </div>
+                            <div class="pop">
+                                <img src="./img/tr3.png" alt="동영상 이미지">
+                                <p>Bestiary:The revenant</p>
+                                <div class="play_btn">
+                                    <img src="./img/play.png" alt="플레이버튼">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part2">
+                            <div class="pop">
+                                <img src="./img/tr4.png" alt="동영상 이미지">
+                                <p>Bestiary:The troll</p>
+                                <div class="play_btn">
+                                    <img src="./img/play.png" alt="플레이버튼">
+                                </div>
+                            </div>
+                            <div class="pop">
+                                <img src="./img/tr5.png" alt="동영상 이미지">
+                                <p>The journey of kratos</p>
+                                <div class="play_btn">
+                                    <img src="./img/play.png" alt="플레이버튼">
+                                </div>
+                            </div>
+                            <div class="pop">
+                                <img src="./img/tr6.png" alt="동영상 이미지">
+                                <p>Fight your way</p>
+                                <div class="play_btn">
+                                    <img src="./img/play.png" alt="플레이버튼">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <a href="#tab2" class="btn">Image</a>
+                    <div id="tab2" class="cont cont2">
+
+                        <div class="img_box">
+                            <div class="swiper img_gallery2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_1.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_2.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_3.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_4.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_5.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_6.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_7.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_8.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_9.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_11.png" />
+                                    </div>
+                                </div>
+                                <!-- <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div> -->
+                            </div>
+                            <div thumbsSlider="" class="swiper img_gallery">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_1.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_2.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_3.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_4.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_5.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_6.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_7.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_8.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_9.png" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/image_11.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="scroll_banner3">
+            <div class="text"><img src="img/text_scroll.png" alt="스크롤"></div>
+            <div class="arrow"><img src="img/scroll_icon.png" alt="스크롤 아이콘"></div>
+        </div>
+    </div>
+
+
+
+    <div class="section" id="section3">
+        <h1>EXPERIENC IT</h1>
+        <div class="swiper last_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product_box">
+                        <img src="./img/product_01.png" alt="">
+
+                        <button class="buy_btn">Buy</button>
+
+                        <div class="product_text">
+                            <dl>
+                                <dt>Stone Mason Edition Exclusies</dt>
+                                <dd>
+                                    Defender of the Chosen Shield Skin
+                                </dd>
+                                <dd>Stone Mason's Ring</dd>
+                                <dd>Mimir'sHeadTalking Keychain</dd>
+                                <dd>2"Horse Brothers Carvings</dd>
+
+                            </dl>
+                            <dl>
+                                <dt>In the Box</dt>
+                                <dd>Full Game</dd>
+                                <dd>9"Kratos & Atreus Statue</dd>
+                                <dd>Limited Steelbook Case</dd>
+                                <dd>2"Horse Brothers Carvings</dd>
+
+                            </dl>
+                            <dl>
+                                <dt>Digital Contents</dt>
+                                <dd>Death's Vow Armor Set</dd>
+                                <dd>Exile's Guardian Shield Skin</dd>
+                                <dd>God of War Comic #0</dd>
+                                <dd>God of War Mini Artbook</dd>
+
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product_box">
+                        <img src="./img/product_02.png" alt="">
+
+                        <button class="buy_btn">Buy</button>
+
+                        <div class="product_text">
+                            <dl>
+                                <dt>Stone Mason Edition Exclusies</dt>
+                                <dd>
+                                    Defender of the Chosen Shield Skin
+                                </dd>
+                                <dd>Stone Mason's Ring</dd>
+                                <dd>Mimir'sHeadTalking Keychain</dd>
+                                <dd>2"Horse Brothers Carvings</dd>
+
+                            </dl>
+                            <dl>
+                                <dt>In the Box</dt>
+                                <dd>Full Game</dd>
+                                <dd>9"Kratos & Atreus Statue</dd>
+                                <dd>Limited Steelbook Case</dd>
+                                <dd>2"Horse Brothers Carvings</dd>
+
+                            </dl>
+                            <dl>
+                                <dt>Digital Contents</dt>
+                                <dd>Death's Vow Armor Set</dd>
+                                <dd>Exile's Guardian Shield Skin</dd>
+                                <dd>God of War Comic #0</dd>
+                                <dd>God of War Mini Artbook</dd>
+
+                            </dl>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="product_box">
+                        <img src="./img/product_03.png" alt="">
+
+                        <button class="buy_btn">Buy</button>
+
+                        <div class="product_text">
+                            <dl>
+                                <dt>Stone Mason Edition Exclusies</dt>
+                                <dd>
+                                    Defender of the Chosen Shield Skin
+                                </dd>
+                                <dd>Stone Mason's Ring</dd>
+                                <dd>Mimir'sHeadTalking Keychain</dd>
+                                <dd>2"Horse Brothers Carvings</dd>
+
+                            </dl>
+                            <dl>
+                                <dt>In the Box</dt>
+                                <dd>Full Game</dd>
+                                <dd>9"Kratos & Atreus Statue</dd>
+                                <dd>Limited Steelbook Case</dd>
+                                <dd>2"Horse Brothers Carvings</dd>
+
+                            </dl>
+                            <dl>
+                                <dt>Digital Contents</dt>
+                                <dd>Death's Vow Armor Set</dd>
+                                <dd>Exile's Guardian Shield Skin</dd>
+                                <dd>God of War Comic #0</dd>
+                                <dd>God of War Mini Artbook</dd>
+
+                            </dl>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </div>
+
+    <!-- sound -->
+    <div class="sound clearfix">
+        <div class="icon_sound">
+            <div><img src="./img/sound_icon.png" alt="사운드 아이콘"></div>
+            <div><img src="./img/sound_icon_on.png" alt="사운드 아이콘"></div>
+        </div>
+        <div class="text_sound"><a href="#"><img src="./img/text_sound.png" alt="사운드"></a></div>
+
+    </div>
+</div>
 </body>
 <!-- fullpage -->
-<script type="text/javascript" src="/fullPage.js-master/dist/fullpage.js"></script>
-<script type="text/javascript" src="/fullPage.js-master/examples/examples.js"></script>
+<script type="text/javascript" src="./fullPage.js-master/dist/fullpage.js"></script>
+<!-- <script type="text/javascript" src="./fullPage.js-master/examples/examples.js"></script> -->
 
-<script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        verticalCentered: false
-    });
-</script>
 
 <!-- snow effect -->
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="let-it-snow.min.js"></script>
-<script src="/js/Simple-Falling-Snow-Effect-with-jQuery-CSS3-let-it-snow/Simple-Falling-Snow-Effect-with-jQuery-CSS3-let-it-snow/let-it-snow.min.js"></script>
-<script>
-    $.letItSnow('.let-it-snow', {
-        stickyFlakes: 'lis-flake--js',
-        makeFlakes: true,
-        sticky: true
-    });
-</script>
-<script type="text/javascript">
 
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-36251023-1']);
-    _gaq.push(['_setDomainName', 'jqueryscript.net']);
-    _gaq.push(['_trackPageview']);
-  
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  
-  </script>
+<script src="./js/plugin/plugin_js/let-it-snow.min.js"></script>
+
+<!-- swiper js -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
 </html>
