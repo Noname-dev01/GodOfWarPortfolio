@@ -1,0 +1,27 @@
+.wrap{
+    width: 100%;
+    height: 100%;
+}
+.notice_bg{
+    background-image:url(../img/notice_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.logo{
+    width: 100px;
+    /* height: 100px; */
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+.logo img{ width: 100%;}
+
+.table{
+    width: 50%;
+
+}

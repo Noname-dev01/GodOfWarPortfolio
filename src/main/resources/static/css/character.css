@@ -1,0 +1,52 @@
+.cha_01,.cha_02{position:absolute;}
+.cha_01{top:0}
+.cha_02{right:10%;}
+
+
+#section0 .title_text{
+    font-family: 'Rye', cursive;
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+#section0 .title_text >h1{
+    font-size: 50px;
+    font-weight:100;
+    letter-spacing:30px;
+    text-align: center;
+}
+#section0 .title_text > p{
+    width:70%;
+    margin:0 auto;
+    text-align: center;
+}
+
+.choice,.choice2{position: absolute; cursor: pointer;}
+.pop_modal img{ width:100%; height:100vh;}
+.choice{
+    top:56%;
+    left:21%;
+}
+.choice2{
+    top:20%;
+    right:20%;
+}
+
+.son_modal,.father_modal{
+    display:none;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.close{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+}

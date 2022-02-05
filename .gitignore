@@ -56,3 +56,4 @@ examples/bug**
 
 ### oauth2 ###
 application-oauth.properties
+application-real-db.properties
