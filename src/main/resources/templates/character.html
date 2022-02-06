@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Heung">
+    <title>God of War</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="text/css" href="/img/favicon.ico">
+    
+    <!-- font -Rye- -->
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- snow effect -->
+        <link  rel="stylesheet" type="text/css" href="/js/plugin/plugin_js/let-it-snow.css">
+    <!-- swiper cdn -->
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- js -->
+    <script src="/godjs/index.js"></script>
+    <!-- common style -->
+    <link rel="stylesheet" href="/css/common.css" type="text/css">
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="/css/character.css">
+    
+
+    
+
+</head>
+
+<body>
+    
+    <!-- sound -->
+    <audio id="sound" src="/bgm/bgmsound.m4a" loop></audio>
+    
+    <!-- main -->
+    <div id="fullpage">
+         
+
+        <div class="section moveImage" id="section0">
+            <!-- snow effect -->
+            <div class="let-it-snow"></div>
+            <div class="title_text">
+                <h1>Character</h1>
+                <p>Kratos is a father again. As mentor to Atreus,a son determined to earn his respect,
+                    he is forced to deal with and control the rage that has long defined him while out in a very
+                    dangerous world with his son.
+                </p>
+            </div>
+            <img class="ming1" src="/img/character_background.jpg" alt="">
+            <div class="cha_01 ming2"><img  src="/img/character_01.png"  alt=""></div>
+            <div class="choice">
+                <a class="sonbtn">
+                    <img src="/img/plusBtn(son)_off.png" onmouseover="this.src='./img/plusBtn(son)_on.png'" onmouseout="this.src='./img/plusBtn(son)_off.png'" alt="상세보기버튼">
+                </a>
+            </div>
+            <div class="cha_02 ming3"><img src="/img/character_02.png" alt=""></div>
+            <div class="choice2">
+                <a class="fatherbtn">
+                    <img src="/img/plusBtn_off.png" onmouseover="this.src='./img/plusBtn_on.png'" onmouseout="this.src='./img/plusBtn_off.png'" alt="상세보기버튼">
+                </a>
+            </div>
+            <div class="son_modal pop_modal">
+                <img src="/img/son_introduce.jpg" alt="">
+                <p class="close">&times;</p>
+            </div>
+            <div class="father_modal pop_modal">
+                <img src="/img/father_introduce.jpg" alt="">
+                <p class="close">&times;</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- sound -->
+    <div class="sound clearfix">
+        <div class="icon_sound">
+           <div><img src="/img/sound_icon.png" alt="사운드 아이콘"></div>
+           <div><img src="/img/sound_icon_on.png" alt="사운드 아이콘"></div>
+        </div>
+        <div class="text_sound"><a href="#"><img src="/img/text_sound.png" alt="사운드"></a></div>
+    
+    </div>
+    
+</body>
+<!-- fullpage -->
+<script type="text/javascript" src="/fullPage.js-master/dist/fullpage.js"></script>
+
+
+
+
+
+<!-- snow effect -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- <script src="let-it-snow.min.js"></script> -->
+<script type="text/javascript" src="/js/plugin/plugin_js/let-it-snow.min.js"></script>
+
+  <!-- swiper js -->
+  <script type="text/javascript" src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <!-- 이미지 움직임 효과 -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>  
+
+</html>

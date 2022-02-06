@@ -23,4 +23,9 @@ public class IndexController {
         }
         return "index";
     }
+
+    @GetMapping("/character")
+    public String character(){
+        return "character";
+    }
 }
