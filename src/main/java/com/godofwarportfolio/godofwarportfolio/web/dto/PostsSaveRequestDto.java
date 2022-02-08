@@ -1,5 +1,6 @@
 package com.godofwarportfolio.godofwarportfolio.web.dto;
 
+
 import com.godofwarportfolio.godofwarportfolio.domain.posts.Posts;
 import lombok.Builder;
 import lombok.Getter;
@@ -13,13 +14,13 @@ public class PostsSaveRequestDto {
     private String author;
 
     @Builder
-    public PostsSaveRequestDto(String title, String content, String author) {
+    public PostsSaveRequestDto(String title, String content, String author){
         this.title = title;
         this.content = content;
         this.author = author;
     }
 
-    public Posts toEntity() {
+    public Posts toEntity(){
         return Posts.builder()
                 .title(title)
                 .content(content)
