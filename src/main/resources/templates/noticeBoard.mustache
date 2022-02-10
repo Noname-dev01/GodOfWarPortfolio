@@ -32,7 +32,7 @@
                 {{#posts}}
                 <tr>
                     <th>{{id}}</th>
-                    <td>{{title}}</td>
+                    <td><a href="/posts/update/{{id}}">{{title}}</a></td>
                     <td>{{author}}</td>
                     <td>{{modifiedDate}}</td>
                 </tr>
@@ -40,7 +40,7 @@
                 </tbody>
             </table>
         </div>
-        <button style="float: right; margin-right:25%;">글쓰기</button>
+        <button style="float: right; margin-right:25%;"><a href="/posts/save">글쓰기</a></button>
 
     </div>
 </div>
