@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.godofwarportfolio'
-version = '1.0.10-SNAPSHOT'
+version = '1.0.11-SNAPSHOT'
 sourceCompatibility = '1.8'
 
 configurations {
