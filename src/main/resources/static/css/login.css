@@ -130,4 +130,7 @@ body{
     border-radius: 0.5px;
     background-color: #dadada;
 }
-
+.btn img {
+    width: 200px;
+    height: 50px;
+}

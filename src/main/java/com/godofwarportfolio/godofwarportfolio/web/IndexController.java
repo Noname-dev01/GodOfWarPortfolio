@@ -26,6 +26,10 @@ public class IndexController {
         }
         return "index";
     }
+    @GetMapping("/loginForm")
+    public String login(){
+        return "login";
+    }
 
     @GetMapping("/character")
     public String character(){

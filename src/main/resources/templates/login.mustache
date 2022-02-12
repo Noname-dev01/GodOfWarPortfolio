@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/login.css" type="text/css">
+     <!-- scroll -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     
+    
+</head>
+<body>
+    <div class="topline">
+        <div class="top_logo">
+            <a href="/"><img src="/img/LOGO.png" alt=""></a>
+        </div>
+    </div>
+    <div class="login_wrap">
+        <div class="panel_inner">
+            <div class="line">
+                <h3 class="login_text">LOGIN</h3>
+            </div>
+            
+                <div class="input_box">
+                    <form method="post">
+                        <p>아이디</p><input type="text" name="id" id="id">
+                        <p>비밀번호</p><input type="password" name="pw" id="pw">
+                        <button class="loginBtn">로그인</button>
+                    </form>
+                </div>
+
+            <ul class="find_wrap">
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="#">아이디찾기/비밀번호찾기</a></li>
+            </ul>
+
+            <div class="btn">
+                <ul>
+                    {{^userName}}
+                    <li><a href="/oauth2/authorization/google" role="button">
+                    <img src="/img/login/google/btn_google_normal.png" alt="구글 로그인"></a></li>
+
+                    <li><a href="/oauth2/authorization/naver" role="button">
+                    <img src="/img/login/naver/btn_naver_normal.png" alt="네이버 로그인"></a></li>
+                    {{/userName}}
+                </ul>
+            </div>
+        </div>
+        
+            
+        
+    </div>
+    
+</body>
+
+</html>
