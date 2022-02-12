@@ -72,8 +72,10 @@
                     Logged in as : <span id="user">{{userName}}</span>
                 <a href="/logout" role="button">Logout</a>
                 {{/userName}}
+                {{^username}}
                 <li><a href="/loginForm" role="button">로그인</a></li>
                 <li><a href="/join.html">회원가입</a></li>
+                {{/username}}
             </ul>
 
             <div class="menu_box">
