@@ -11,13 +11,9 @@ import javax.validation.constraints.NotBlank;
 
 @Getter
 @NoArgsConstructor
-@Data
 public class PostsSaveRequestDto {
-    @NotBlank
     private String title;
-    @NotBlank
     private String content;
-    @NotBlank
     private String author;
 
     @Builder
