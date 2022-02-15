@@ -1,6 +1,9 @@
 package com.godofwarportfolio.godofwarportfolio.web;
 
 
+import com.godofwarportfolio.godofwarportfolio.config.auth.LoginUser;
+import com.godofwarportfolio.godofwarportfolio.config.auth.dto.SessionUser;
+import com.godofwarportfolio.godofwarportfolio.domain.posts.PostsRepository;
 import com.godofwarportfolio.godofwarportfolio.service.posts.PostsService;
 import com.godofwarportfolio.godofwarportfolio.web.dto.PostsResponseDto;
 import com.godofwarportfolio.godofwarportfolio.web.dto.PostsSaveRequestDto;
