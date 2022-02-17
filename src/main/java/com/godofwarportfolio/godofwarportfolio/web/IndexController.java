@@ -40,6 +40,10 @@ public class IndexController {
         model.addAttribute("posts", postsService.findAllDesc());
         return "noticeBoard";
     }
+    @GetMapping("/gameIntroduce")
+    public String gameIntroduce(){
+        return "gameIntroduce";
+    }
 
     @GetMapping("/posts/save")
     public String postsSave() {
