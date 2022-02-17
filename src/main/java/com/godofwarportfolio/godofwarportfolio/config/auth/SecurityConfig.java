@@ -20,7 +20,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers("/","/video/**","/bgm/**","/fullPage.js-master/**","/godjs/**"
-                        ,"/join/**","/css/**","/img/**", "/js/**","/h2-console/**","/profile","/character","/noticeBoard","/loginForm").permitAll()
+                        ,"/join/**","/css/**","/img/**", "/js/**","/h2-console/**","/profile","/character",
+                        "/noticeBoard","/loginForm","gameIntroduce").permitAll()
                 .antMatchers("/api/v1/**").hasRole(Role.USER.name())
                 .anyRequest().authenticated()
                 .and()
