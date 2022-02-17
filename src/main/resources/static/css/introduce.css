@@ -23,7 +23,7 @@ img {
     height: 720px;
 }
 .title_01{
-    background-image:url(static/img/introduce/test_banner.jpg);
+    background-image:url(../img/introduce/test_banner.jpg);
     background-repeat: no-repeat;
     /* background-size: 100%; */
     background-size: cover;
@@ -308,7 +308,7 @@ figure{
 
 }
 figure::before{
-    content: url(static/img/introduce/play.png);
+    content: url(../img/introduce/play.png);
     position:absolute;
     top: 50%;
     left: 50%;

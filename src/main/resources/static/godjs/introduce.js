@@ -48,13 +48,13 @@ function offClick() {
 // parallax
 $(function(){
     $('.banner').parallax({
-        imageSrc : './img/introduce.jpg',
+        imageSrc : '../img/introduce/introduce.jpg',
         speed:0,
 
     });
 
     $('.banner2').parallax({
-        imageSrc : './img/god-of-war-bg-image-dark.png',
+        imageSrc : '../img/introduce/god-of-war-bg-image-dark.png',
         speed:0,
 
     });
