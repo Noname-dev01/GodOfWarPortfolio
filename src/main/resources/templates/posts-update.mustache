@@ -3,12 +3,20 @@
 <head>
     <title>게시글 수정</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
+    <!-- style -->
+    <link rel="stylesheet" href="/css/notice_board.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-
-<h1>게시글 수정</h1>
+<div class="wrap">
+    <div class="notice_bg">
+        <div class="logo_grid">
+            <h1 class="logo">
+                <a href="/"><img src="/img/LOGO.png" alt="로고"></a>
+            </h1>
+        </div>
+        <h1 class="main_title_text">게시글 수정</h1>
 
 <div class="col-md-12">
     <div class="col-md-4">
@@ -30,9 +38,13 @@
                 <textarea class="form-control" id="content">{{post.content}}</textarea>
             </div>
         </form>
+        <div class="btn_area">
         <a href="/noticeBoard" role="button" class="btn btn-secondary">취소</a>
         <button type="button" class="btn btn-primary" id="btn-update">수정 완료</button>
         <button type="button" class="btn btn-danger" id="btn-delete">삭제</button>
+        </div>
+    </div>
+</div>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.js"
