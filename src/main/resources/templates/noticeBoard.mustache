@@ -26,8 +26,8 @@
                 <tr style="text-align: center;">
                     <!-- <th scope="col">#</th> -->
                     <th class="user" scope="col">번호</th>
-                    <th class="title" scope="col">제목</th>
-                    <th class="date" scope="col">작성자</th>
+                    <th class="title" scope="col">작성자</th>
+                    <th class="date" scope="col">제목</th>
                     <th class="inquiry" scope="col">날짜</th>
                 </tr>
                 </thead>
@@ -35,8 +35,8 @@
                 {{#posts}}
                 <tr>
                     <th>{{id}}</th>
-                    <td><a href="/posts/update/{{id}}">{{title}}</a></td>
                     <td>{{author}}</td>
+                    <td><a href="/posts/update/{{id}}">{{title}}</a></td>
                     <td>{{modifiedDate}}</td>
                 </tr>
                 {{/posts}}
