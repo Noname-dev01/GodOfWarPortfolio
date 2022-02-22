@@ -60,6 +60,7 @@ img { pointer-events: none;}
     position:absolute;
     right:0px;
     bottom: -35px;
+    color: white;
     appearance: inherit;
     background-color: #000;
     background-image: none;
