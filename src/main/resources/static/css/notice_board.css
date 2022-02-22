@@ -60,6 +60,40 @@ img { pointer-events: none;}
     position:absolute;
     right:0px;
     bottom: -35px;
+    appearance: inherit;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    overflow: visible;
+    padding: 2px 3px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.text_write:focus {
+    text-decoration: none;
+}
+.text_write:hover{
+    text-decoration:none;
+}
+.text_write:active{
+    box-shadow:rgba(0,0,0,.125)0 3px 5px inset;
+    outline:0;
+}
+.text_write:not([disable]):active{
+    box-shadow:#fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform:translate(2px,2px);
 }
 .table{
     width: 50%;
