@@ -2,6 +2,7 @@ package com.godofwarportfolio.godofwarportfolio.web;
 
 import com.godofwarportfolio.godofwarportfolio.config.auth.LoginUser;
 import com.godofwarportfolio.godofwarportfolio.config.auth.dto.SessionUser;
+import com.godofwarportfolio.godofwarportfolio.domain.member.Member;
 import com.godofwarportfolio.godofwarportfolio.service.posts.PostsService;
 import com.godofwarportfolio.godofwarportfolio.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
@@ -9,8 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-
-import javax.servlet.http.HttpSession;
+import org.springframework.web.bind.annotation.SessionAttribute;
 
 @Controller
 @RequiredArgsConstructor
@@ -19,15 +19,16 @@ public class IndexController {
     private final PostsService postsService;
 
     @GetMapping("/")
-    public String index(Model model, @LoginUser SessionUser user){
+    public String index(Model model, @LoginUser SessionUser user,
+                        @SessionAttribute(name=SessionConst.LOGIN_MEMBER,required = false)Member loginMember){
+        if (loginMember == null){
+            return "index";
+        }
         if (user != null) {
             model.addAttribute("userName", user.getName());
         }
+        model.addAttribute("member",loginMember);
         return "index";
-    }
-    @GetMapping("/loginForm")
-    public String login(){
-        return "login";
     }
 
     @GetMapping("/character")
